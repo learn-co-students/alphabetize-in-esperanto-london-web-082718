@@ -1,3 +1,13 @@
+require "pry"
+
 def alphabetize(arr)
-  # code here
+  esperanto = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+ a = esperanto.split("")
+ #binding.pry
+ arr.sort_by do |word|
+    word.split("").collect do |letter|
+       #binding.pry
+      a.index(letter)
+    end
+  end
 end
